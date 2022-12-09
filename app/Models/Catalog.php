@@ -16,4 +16,9 @@ class Catalog extends Model
     {
         return $this->hasOne(CatalogStatus::class);
     }
+
+    public function uploader()
+    {
+        return $this->belongsTo(Catalog::class);
+    }
 }
