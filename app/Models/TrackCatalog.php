@@ -12,4 +12,8 @@ class TrackCatalog extends Model
     protected $table = 'track_catalogs';
     protected $fillable = ['track_file','title','composer','artist_name'];
 
+    public function catalogs()
+    {
+        return $this->belongsTo(Catalog::class);
+    }
 }
