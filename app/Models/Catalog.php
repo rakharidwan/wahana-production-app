@@ -21,4 +21,9 @@ class Catalog extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function trackCatalogs()
+    {
+        return $this->hasMany(TrackCatalog::class);
+    }
 }
