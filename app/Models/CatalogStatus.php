@@ -12,7 +12,7 @@ class CatalogStatus extends Model
     protected $table = 'catalog_statuss';
     protected $fillable = ['status'];
 
-    public function user()
+    public function catalog()
     {
         return $this->belongsTo(Catalog::class);
     }
